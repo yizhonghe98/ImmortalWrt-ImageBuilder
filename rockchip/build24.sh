@@ -61,6 +61,9 @@ PACKAGES="$PACKAGES luci-theme-argon"
 # PACKAGES="$PACKAGES luci-app-argon-config"
 # PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
+PACKAGES="$PACKAGES php8"
+PACKAGES="$PACKAGES php8-cgi"
+
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
@@ -68,7 +71,7 @@ if [ "$INCLUDE_DOCKER" = "yes" ]; then
 fi
 # 文件管理器
 # PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
-# PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
@@ -76,6 +79,7 @@ PACKAGES="$PACKAGES luci-i18n-uhttpd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-omcproxy-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-rtp2httpd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+PACKAGES="$PACKAGES luci-proto-wireguard"
 
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
