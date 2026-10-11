@@ -73,7 +73,8 @@ fi
 # PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 
-PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+# PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-uhttpd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-omcproxy-zh-cn"
