@@ -64,6 +64,8 @@ PACKAGES="$PACKAGES luci-theme-argon"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
 PACKAGES="$PACKAGES php8"
 PACKAGES="$PACKAGES php8-cgi"
+PACKAGES="$PACKAGES php8-cli"
+PACKAGES="$PACKAGES php8-mod-curl"
 
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
